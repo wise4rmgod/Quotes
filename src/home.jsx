@@ -13,7 +13,6 @@ export default function Home({ handleClick, quotename }) {
         </div>
         <div className="Frame2 w-[70px] h-[70px] p-5 left-[418.11px] top-[300px] absolute bg-emerald-400 rounded-[100px] justify-center items-center gap-2.5 inline-flex">
           <div className="Shuffle w-[30px] h-[30px] relative">
-            {" "}
             <img
               className="w-5 h-[28.11px] left-[5px] top-[1px] absolute rounded-xl"
               src={shuffle}
