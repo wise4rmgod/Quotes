@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: quotes-pod
+  labels:
+    app: quotes
+  spec:
+    containers:
+      - name: quotes
+        image: wise4rmgod/quotes:v2
+        imagePullpolicy: Never
+        ports:
+          - containerPort: 80
+
+        resources:
+          limits:
+            memory: 512mi
+            cpu: "1"
+          requests:
+            memory: 256mi
+            cpu: "02"
